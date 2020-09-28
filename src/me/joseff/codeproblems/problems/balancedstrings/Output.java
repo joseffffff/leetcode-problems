@@ -1,4 +1,4 @@
-package me.joseff.codeproblems.problems.balancedStrings;
+package me.joseff.codeproblems.problems.balancedstrings;
 
 import me.joseff.codeproblems.common.BaseOutput;
 

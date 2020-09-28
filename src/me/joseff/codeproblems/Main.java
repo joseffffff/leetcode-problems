@@ -1,16 +1,20 @@
 package me.joseff.codeproblems;
 
+import me.joseff.codeproblems.common.BaseInput;
+import me.joseff.codeproblems.common.BaseOutput;
 import me.joseff.codeproblems.common.Problem;
-import me.joseff.codeproblems.problems.balancedStrings.BalancedStrings;
-import me.joseff.codeproblems.problems.palindromeNumer.PalindromeNumber;
-import me.joseff.codeproblems.problems.twoSum.TwoSum;
+import me.joseff.codeproblems.problems.balancedstrings.BalancedStrings;
+import me.joseff.codeproblems.problems.onethreetwopattern.OneThreeTwoPattern;
+import me.joseff.codeproblems.problems.palindromelinkedlist.PalindromeLinkedList;
+import me.joseff.codeproblems.problems.palindromenumber.PalindromeNumber;
+import me.joseff.codeproblems.problems.twosum.TwoSum;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
 
-    private static List<Problem> problems;
+    private static List<Problem<? extends BaseInput, ? extends BaseOutput<?>>> problems;
 
     public static void main(String[] args) {
         addProblems();
@@ -22,13 +26,14 @@ public class Main {
                 // List of problems here
                 new TwoSum(),
                 new PalindromeNumber(),
-                new BalancedStrings()
+                new BalancedStrings(),
+                new PalindromeLinkedList(),
+                new OneThreeTwoPattern()
         );
     }
 
     private static void runProblems() {
-
-        problems.forEach((Problem problem) -> {
+        problems.forEach((Problem<? extends BaseInput, ? extends BaseOutput<?>> problem) -> {
             System.out.println("--------------------------------------------------------------------------");
             System.out.println("Problem ID " + problem.leetCodeId() + ": " + problem.leetCodeTitle());
 

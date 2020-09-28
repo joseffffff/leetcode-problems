@@ -1,12 +1,12 @@
-package me.joseff.codeproblems.problems.palindromeNumer;
+package me.joseff.codeproblems.outputs;
 
 import me.joseff.codeproblems.common.BaseOutput;
 
-public class Output implements BaseOutput<Boolean> {
+public class BooleanOutput implements BaseOutput<Boolean> {
 
     private final boolean result;
 
-    public Output(boolean result) {
+    public BooleanOutput(boolean result) {
         this.result = result;
     }
 

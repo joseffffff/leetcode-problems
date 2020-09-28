@@ -1,4 +1,4 @@
-package me.joseff.codeproblems.problems.palindromeNumer;
+package me.joseff.codeproblems.problems.palindromenumber;
 
 import me.joseff.codeproblems.common.BaseInput;
 

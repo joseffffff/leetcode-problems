@@ -1,5 +1,6 @@
-package me.joseff.codeproblems.problems.twoSum;
+package me.joseff.codeproblems.problems.twosum;
 
+import me.joseff.codeproblems.common.Difficulty;
 import me.joseff.codeproblems.common.Problem;
 
 import java.util.HashMap;
@@ -20,6 +21,11 @@ public class TwoSum implements Problem<Input, Output> {
     @Override
     public String leetCodeTitle() {
         return "Two Sum";
+    }
+
+    @Override
+    public Difficulty difficulty() {
+        return Difficulty.EASY;
     }
 
     @Override

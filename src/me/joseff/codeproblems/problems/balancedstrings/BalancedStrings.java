@@ -1,5 +1,6 @@
-package me.joseff.codeproblems.problems.balancedStrings;
+package me.joseff.codeproblems.problems.balancedstrings;
 
+import me.joseff.codeproblems.common.Difficulty;
 import me.joseff.codeproblems.common.Problem;
 
 import java.util.HashMap;
@@ -67,5 +68,10 @@ public class BalancedStrings implements Problem<Input, Output> {
     @Override
     public String leetCodeTitle() {
         return "Split a String in Balanced Strings";
+    }
+
+    @Override
+    public Difficulty difficulty() {
+        return Difficulty.EASY;
     }
 }

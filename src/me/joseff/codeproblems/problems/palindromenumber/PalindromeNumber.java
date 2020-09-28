@@ -1,5 +1,6 @@
-package me.joseff.codeproblems.problems.palindromeNumer;
+package me.joseff.codeproblems.problems.palindromenumber;
 
+import me.joseff.codeproblems.common.Difficulty;
 import me.joseff.codeproblems.common.Problem;
 
 import java.util.HashMap;
@@ -47,5 +48,10 @@ public class PalindromeNumber implements Problem<Input, Output> {
     @Override
     public String leetCodeTitle() {
         return "Palindrome Number";
+    }
+
+    @Override
+    public Difficulty difficulty() {
+        return Difficulty.EASY;
     }
 }

@@ -12,6 +12,8 @@ public interface Problem<Input extends BaseInput, Output extends BaseOutput> {
 
     public String leetCodeTitle();
 
+    public Difficulty difficulty();
+
     default boolean check() {
 
         Map<Input, Output> set = this.inputsOutputsSet();

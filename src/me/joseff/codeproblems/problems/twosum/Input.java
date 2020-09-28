@@ -1,4 +1,4 @@
-package me.joseff.codeproblems.problems.twoSum;
+package me.joseff.codeproblems.problems.twosum;
 
 import me.joseff.codeproblems.common.BaseInput;
 
